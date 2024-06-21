@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      github 2.O
+    </title>
+    <style>
+      body{
+        margin : 0 ;
+      }
+      .main1{
+        width : 100%;
+        height : 100vh;
+        background-color: rgb(218, 99, 119);
+      }
+      .overlay{
+        width : 100%;
+        height : 100vh;
+        background-color: rgba(0 , 0 , 0 , 0.6);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .search{
+       margin-bottom : 15px;
+      }
+      .input {
+        width : 400px;
+       height : 35px;
+       border-radius: 10px;
+       border: none;
+       padding: 4px;
+       font-size: 20px;
+      }
+      .info{
+        border-radius: 20px;
+       
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding : 25px;
+        background-color: rgb(167, 149, 152);
+      }
+      .photo{
+        margin-left : 0px;
+        border-radius: 75px;
+        width : 150px;
+        height: 150px;
+      }
+      .user-info{
+        margin-left: 100px;
+      }
+      .user-info h2{
+        margin-top : 0;
+      }
+      .user-info ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 0;
+    max-width: 400px;
+}
+      .user-info ul li {
+      display: flex;
+      margin-right: 10px;
+      align-items: center;
+}
+.repo {
+    background-color: rgb(141, 46, 62);
+    border-radius: 5px;
+    display: inline-block;
+    color: white;
+    font-size: 0.7rem;
+    padding: 0.25rem 0.5rem;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+    text-decoration: none;
+}
+      
+    </style>
+  </head>
+  <body>
+    <div class = "main1">
+      <div class = "overlay">
+        <div class = "search">
+          <input type="text" placeholder="search a github user here" class = "input" id = "input">
+        </div>
+        <main id = "form">
+      </main>
+      </div>
+    </div>
+    <script src = "git.js"></script>
+  </body>
+</html>
